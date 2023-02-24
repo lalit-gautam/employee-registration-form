@@ -1,0 +1,75 @@
+.container{
+    text-align: center;
+    margin-top : 50px;
+}
+.inner-border{
+    border: 2px solid red;
+}
+.sign-in{
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.continue{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+input{
+    width: 400px;
+    margin-top: 40px;
+    /* margin-bottom: 30px; */
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    font-size: 25px;
+}
+h3{
+    text-align: center;
+    /* border: 2px solid red; */
+    margin-right: 270px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.guestid{
+    /* border: 2px solid red; */
+    margin-top: 0px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* .guest-mode{
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+.guest-mode{
+    /* border: 2px solid red; */
+    margin-right: 310px;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.create-account{
+    /* border: 2px solid red; */
+    margin-right: 155px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button{
+    width: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px; 
+    background-color: #1a73e8;
+}
+.button:hover{
+    background-color: blueviolet;
+    color: white;
+    background-color: #1a73e8;
+}
