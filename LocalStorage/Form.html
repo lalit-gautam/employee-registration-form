@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Student Form</h1>
+            <hr>
+        </div>
+
+        <div class="stud-name-id">
+
+            <label for="student_name">Name : </label> 
+            <input type="text" name="student_name" id="student_name" placeholder="Enter Name ">
+
+            <label for="student_id"> ID : </label>
+            <input type="number" name="student_id" id="student_id" placeholder="Enter Id">
+
+        </div>
+
+
+
+        <div class="stud-dept-dob">
+
+            <label for="student_dept">Department : </label>
+            <input type="text" name="student_department" id="student_department" placeholder="Enter Department">
+
+            <label for="student_dob">Date Of Birth : </label>
+            <input type="date" name="student_dateob" id="student_dateob" placeholder="Enter Date of Birth">
+        </div>
+
+        
+        <div class="stud_hobbies">
+            <label for="Hobbies : ">Hobbies : </label>
+            <textarea name="student_hobbies" id="student_hobbies" cols="50" rows="1"></textarea>
+        </div>
+
+        <button type="submit" onclick="studentbtn()" id="sub-btn">Save</button>
+        
+
+    </div>
+
+
+<script>
+    
+
+        function studentbtn(){
+
+        s_name = document.getElementById('student_name').value;
+        s_id = document.getElementById('student_id').value;
+        s_department = document.getElementById('student_department').value;
+        s_dob = document.getElementById('student_dateob').value;
+        s_hobbies = document.getElementById('student_hobbies').value;
+
+        // student Object
+        student = new Student();
+        
+        student.setName(s_name);
+        student.setId(s_id);
+        student.setDepartment(s_department);
+        student.setDob(s_dob);
+        student.setHobbies(s_hobbies);
+
+        // empty student array 
+        var studentArray = [];
+
+        if(document.getElementById('sub-btn').onclick){
+            studentArray.push(student);
+        }
+        
+
+        localStorage.setItem("studentArray", JSON.stringify(studentArray));
+        alert('Form submitted');
+
+
+        for(let i = 0; i < 3; i++){
+            let res = studentArray[i];
+        }
+
+        console.log(JSON.parse(localStorage.getItem('res')))
+        
+
+        }
+
+
+    class Student{
+        name;
+        id;
+        department;
+        dob;
+        hobbies;
+
+        getName(){
+            return this.name;
+        }
+        getId(){
+            return this.id;
+        }
+        getDepartment(){
+            return this.department;
+        }
+        getDob(){
+            return this.dob;
+        }
+        getHobbies(){
+            return this.hobbies;
+        }
+        setName(name){
+            this.name = name;
+        }
+        setId(id){
+            this.id = id;
+        }
+        setDepartment(department){
+            this.department = department;
+        }
+        setDob(dob){
+            this.dob = dob;
+        }
+        setHobbies(hobbies){
+            this.hobbies = hobbies;
+        }
+    }
+       
+
+    // function Student(){
+
+    //   let name;
+    //   let id;
+    //   let department;
+    //   let dob;
+    //   let hobbies;
+
+    //     name = document.getElementById('student_name').value;
+    //     id = document.getElementById('student_id').value;
+    //     department = document.getElementById('student_department').value;
+    //     dob = document.getElementById('student_dateob').value;
+    //     hobbies = document.getElementById('student_hobbies').value;
+
+    //     localStorage.setItem("name", name)
+    //     localStorage.setItem("id", id)
+    //     localStorage.setItem("department", department)
+    //     localStorage.setItem("dob", dob)
+    //     localStorage.setItem("hobbies", hobbies)
+
+    // };
+
+</script>
+
+</body>
+</html>

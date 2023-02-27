@@ -1,0 +1,35 @@
+.container{
+    border: 2px solid rgb(209, 178, 178);
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 0px;
+}
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(71, 66, 66);
+}
+hr{
+    border: 2px solid black;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stud-name-id{
+    margin-bottom: 5px;
+}
+.stud-dept-dob{
+    /* border: 2px solid red; */
+    margin-right: 17px;
+    margin-bottom: 5px;
+}
+.stud_hobbies{
+    margin-right: 17px;
+    margin-bottom: 5px;
+}
+button{
+    margin-bottom: 15px;
+}
